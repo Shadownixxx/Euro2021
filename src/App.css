@@ -1,0 +1,25 @@
+* {
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+nav {
+  background-color: green;
+}
+
+
+a {
+  color: white;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: yellow;
+}
