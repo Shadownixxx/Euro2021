@@ -17,18 +17,18 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
+          <div className='App'>
             <nav>
               <ul>
-                <li><NavLink to="/" >Start</NavLink></li>
-                <li><NavLink to="/teams">Lista drużyn</NavLink></li>
-                <li><NavLink to="/matches">Mecze</NavLink></li>
+                <li><NavLink to='/' >Start</NavLink></li>
+                <li><NavLink to='/teams'>Lista drużyn</NavLink></li>
+                <li><NavLink to='/matches'>Mecze</NavLink></li>
               </ul>
             </nav>
             <Switch>
-              <Route path="/" exact component={Start} />
-              <Route path="/teams" component={Teams} />
-              <Route path="/matches" component={MatchesList} />
+              <Route path='/' exact component={Start} />
+              <Route path='/teams' component={Teams} />
+              <Route path='/matches' component={MatchesList} />
               <Route component={Error} />
             </Switch>
           </div>

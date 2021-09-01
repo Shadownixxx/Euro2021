@@ -19,7 +19,6 @@ export const appReducer = (state = countryList, action: any) => {
     }
 }
 
-
 const matches = [
      { id:1,
         team1: 'Italy',
@@ -103,7 +102,6 @@ const matches = [
         team2: 'Germany',
         score:'1:0',
         group: 'F',
-        
     },
 ]
 

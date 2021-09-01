@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Poland from './flags/poland.png';
-import England from './flags/united kingdom.png';
-import Czech from './flags/czech-republic.png';
+import England from './flags/england.png';
+import Czech from './flags/.png';
 import Austria from './flags/austria.png';
 import Belgium from './flags/belgium.png';
 import Croatia from './flags/croatia.png';
