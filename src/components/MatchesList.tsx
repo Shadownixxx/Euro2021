@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const MatchesList: any = ({ matches }: any) => {
     const list = matches.map((matches: any) => (
-        <div>
+        <div key={matches.id}>
             <div>Mecz nr: {matches.id}</div>
             <div>Grupa {matches.group} : <strong>{matches.team1} - {matches.team2}</strong></div>
             <div>Wynik: {matches.score}</div>

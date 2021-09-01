@@ -3,7 +3,7 @@ import './App.css';
 
 import { Provider } from 'react-redux';
 import store from './store/store';
-import { BrowserRouter as Router, Link, NavLink, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 
 
 import Teams from './components/Teams';
