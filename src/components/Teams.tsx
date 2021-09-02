@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Teams: any = ({ countries }: any) => {
     const list = countries.map((country: any) => (
-        <span>
+        <span key={country}>
             <span>{country}</span>
             <img src={require(`./flags/${country.toLowerCase()}.png`).default} alt={country} />
             <br />

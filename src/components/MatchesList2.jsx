@@ -1,13 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const MatchesList: any = ({ matches }: any) => {
+const MatchesList: any = ({ matches2 }: any) => {
     
-    const list = matches.map((matches: any) => (
+    const list = matches2.map((matches: any) => (
         <div key={matches.id}>
             <div>Mecz nr: {matches.id}</div>
             <div>Grupa {matches.group} : <strong>{matches.team1} - {matches.team2}</strong></div>
             <div>Wynik: {matches.score}</div>
+            <br />
+            <div>Obstaw wynik!!</div>
+            <input type="text" /> <button>Zatwierdź zakład</button>
+            <br />
             <br />
         </div>
     ));
@@ -16,7 +20,7 @@ const MatchesList: any = ({ matches }: any) => {
         <ul>
             <h2>Lista meczów:</h2>
             <br />
-            <h3>Kolejka 1</h3>
+            <h3>Kolejka 2</h3>
             <br />
             {list}
         </ul>
@@ -24,7 +28,7 @@ const MatchesList: any = ({ matches }: any) => {
 }
 
 const mapStateToProps = (store: any) => ({
-    matches: store.matches
+    matches2: store.matches2
 })
 
 export default connect(mapStateToProps)(MatchesList);
