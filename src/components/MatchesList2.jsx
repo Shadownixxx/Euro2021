@@ -1,14 +1,17 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-const MatchesList: any = ({ matches2 }: any) => {
-    
-    const list = matches2.map((matches: any) => (
+const MatchesList2 = () => {
+
+    const matchList = useSelector(store => store.matches2)
+
+    const list = matchList.map((matches) => (
         <div key={matches.id}>
             <div>Mecz nr: {matches.id}</div>
             <div>Grupa {matches.group} : <strong>{matches.team1} - {matches.team2}</strong></div>
             <div>Wynik: {matches.score}</div>
             <br />
+            <div>Kurs:</div>
             <div>Obstaw wynik!!</div>
             <input type="text" /> <button>Zatwierdź zakład</button>
             <br />
@@ -27,8 +30,4 @@ const MatchesList: any = ({ matches2 }: any) => {
     )
 }
 
-const mapStateToProps = (store: any) => ({
-    matches2: store.matches2
-})
-
-export default connect(mapStateToProps)(MatchesList);
+export default MatchesList2;
